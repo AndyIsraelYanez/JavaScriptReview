@@ -1,26 +1,37 @@
-
-// var numberOne = 10;
-// var numberTwo = 2
-
-// function suma(numberOne, numbertwo) {
-
-//     var resultado;
-//     resultado = numberOne + numbertwo;
-//     return resultado;
-
-// }
-
-// console.log(suma(numberOne, numberTwo))
+let nombre ;
+let edad ;
+let equipo ;
 
 
+function Bienvenida (nombre,edad,equipo){
 
-function suma (numberOne,numberTwo){
+    console.log(`BUenas tardes, comunicamos que el jugador ${nombre} con la edad de ${edad} llega al equipo mas garnde del Ecuador 
+    ${equipo}`);
 
-    var numberOne = document.getElementById('numberOne');
-    var numberTwo = document.getElementById('numberTwo');
-
-
-    // var resultado;
-    // resultado = numberOne + numberTwo;
-    // return resultado;
 }
+
+Bienvenida("Andy",22,"LIga Deportiva Universitaria");
+
+//funcion declarada
+
+
+function declared (){
+
+    console.log(`ESta es una funcion donde se la puede inciializar desde cualquier `)
+}
+
+
+declared();
+
+//funcion expresada
+
+// FuncionExpresada();
+
+const FuncionExpresada = function (){
+    console.log(`ESta es una funcion que esta dentro de una variable , por lo tanto 
+    no se la puede inicializar antes  de la misma  solo depsues .,,,,,,,ReferenceError: Cannot access 'FuncionExpresada' before initialization`)
+}
+
+
+
+FuncionExpresada();
