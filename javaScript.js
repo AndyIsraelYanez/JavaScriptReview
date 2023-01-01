@@ -105,21 +105,63 @@ Estudiante.saludar();
 //  ! niega lo verdaero a falso y viceversa
 
 
-let hora = 14;
+// let hora = 14;
 
 
-if (hora >= 0 && hora <= 5) {
-    console.log("ES de hora de ir a la cam----a");
+// if (hora >= 0 && hora <= 5) {
+//     console.log("ES de hora de ir a la cam----a");
 
 
-} else if (hora >= 6 && hora <= 11) {
+// } else if (hora >= 6 && hora <= 11) {
 
-        console.log("BUenos dias liguistas");
+//         console.log("BUenos dias liguistas");
       
-    } else if(hora >= 12 && hora <= 18){
-        console.log("Buenas tardes liguistas")
+//     } else if(hora >= 12 && hora <= 18){
+//         console.log("Buenas tardes liguistas")
 
 
-    }else if (hora >= 19 && hora <= 23){
-        console.log("Buenas noches albos")
-    }
+//     }else if (hora >= 19 && hora <= 23){
+//         console.log("Buenas noches albos")
+//     }
+
+
+
+
+    // switch - case 
+
+
+    let dia = 0;
+
+
+switch (dia) {
+    case 0: 
+    console.log("Domingo")
+    break;
+
+    case 1: 
+    console.log("Lunes")
+    break;
+
+    case 2: 
+    console.log("Martes")
+    break;
+
+    case 3: 
+    console.log("Miercoles")
+    break;
+
+    case 4: 
+    console.log("Jueves")
+    break;
+
+    case 5: 
+    console.log("Viernes")
+    break;
+
+    case 6: 
+    console.log("Sabado")
+    break;
+
+    default:
+        break;
+}
