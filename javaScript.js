@@ -66,17 +66,17 @@
 
 
 
-const Estudiante ={
+const Estudiante = {
 
     nombre: "Andy",
     apellido: "De la Cruz",
     edad: 22,
-    Direccion:{
+    Direccion: {
         callePrincipal: "San Carlos",
         calleSecundaria: "via principal"
     },
 
-    saludar : function(){
+    saludar: function () {
         console.log(`Este es mi primner saludo, mi nombre es: ${this.nombre} ${this.apellido}
         tengo ${this.edad} años de edad, mi calle principal es ${this.Direccion.callePrincipal}
         `)
@@ -115,7 +115,7 @@ Estudiante.saludar();
 // } else if (hora >= 6 && hora <= 11) {
 
 //         console.log("BUenos dias liguistas");
-      
+
 //     } else if(hora >= 12 && hora <= 18){
 //         console.log("Buenas tardes liguistas")
 
@@ -127,7 +127,7 @@ Estudiante.saludar();
 
 
 
-    // switch - case 
+// switch - case 
 
 
 //     let dia = 0;
@@ -169,30 +169,30 @@ Estudiante.saludar();
 
 // for 
 
-let numeros =[1,2,3,4,5,6,7,8,9,10]
+let numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 
 for (let i = 0; i < numeros.length; i++) {
 
     console.log(numeros[i])
-  ;
-    
+        ;
+
 }
 
 
 // for in: sirve  por lo general para los objetos  permitiendo ietarra o recorrer cada uno de las propiedades del objeto
 
 
-const jugador ={
+const jugador = {
 
-    nombre: "Andy" ,
+    nombre: "Andy",
     edad: 22,
-    equipo : "ldu"
+    equipo: "ldu"
 
 }
 
 
-for (const propiedades in jugador ){
+for (const propiedades in jugador) {
 
     // console.log(`propiedad : ${jugador[propiedades]}`);
 
@@ -209,9 +209,31 @@ let palabra = "hola mundo";
 
 
 
-for (const item of palabra){
+for (const item of palabra) {
 
     console.log(item)
 
+
+}
+
+
+// try catch captura de errores
+
+
+
+
+try {
+    let numero = "hola";
+
+    if (isNaN(numero)) {
+        throw new Error("el caracter introducido no es numero");
+
+    }
+
+    console.log(numero * numero)
+
+} catch (error) {
+
+    console.log(`Algo salio mal y es ; ${error}`)
 
 }
