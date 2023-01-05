@@ -130,38 +130,88 @@ Estudiante.saludar();
     // switch - case 
 
 
-    let dia = 0;
+//     let dia = 0;
 
 
-switch (dia) {
-    case 0: 
-    console.log("Domingo")
-    break;
+// switch (dia) {
+//     case 0: 
+//     console.log("Domingo")
+//     break;
 
-    case 1: 
-    console.log("Lunes")
-    break;
+//     case 1: 
+//     console.log("Lunes")
+//     break;
 
-    case 2: 
-    console.log("Martes")
-    break;
+//     case 2: 
+//     console.log("Martes")
+//     break;
 
-    case 3: 
-    console.log("Miercoles")
-    break;
+//     case 3: 
+//     console.log("Miercoles")
+//     break;
 
-    case 4: 
-    console.log("Jueves")
-    break;
+//     case 4: 
+//     console.log("Jueves")
+//     break;
 
-    case 5: 
-    console.log("Viernes")
-    break;
+//     case 5: 
+//     console.log("Viernes")
+//     break;
 
-    case 6: 
-    console.log("Sabado")
-    break;
+//     case 6: 
+//     console.log("Sabado")
+//     break;
 
-    default:
-        break;
+//     default:
+//         break;
+// }
+
+
+// for 
+
+let numeros =[1,2,3,4,5,6,7,8,9,10]
+
+
+for (let i = 0; i < numeros.length; i++) {
+
+    console.log(numeros[i])
+  ;
+    
+}
+
+
+// for in: sirve  por lo general para los objetos  permitiendo ietarra o recorrer cada uno de las propiedades del objeto
+
+
+const jugador ={
+
+    nombre: "Andy" ,
+    edad: 22,
+    equipo : "ldu"
+
+}
+
+
+for (const propiedades in jugador ){
+
+    // console.log(`propiedad : ${jugador[propiedades]}`);
+
+    console.log(`propiedad  ${propiedades}: ${jugador[propiedades]}`);
+
+}
+
+
+// for of : sirve  recorrer cada uno de los caracteres , que sea ierable es decir paertir
+
+
+let palabra = "hola mundo";
+
+
+
+
+for (const item of palabra){
+
+    console.log(item)
+
+
 }
