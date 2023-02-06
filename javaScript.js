@@ -1,4 +1,4 @@
-// // let nombre ;
+/*// // let nombre ;
 // // let edad ;
 // // let equipo ;
 
@@ -308,10 +308,9 @@ class Perro extends Animal{
     }
 
 
-
     }
 
- 
+
     const beican = new Animal("Beican", "macho"), 
     lazi =  new Perro("Lazy","hembra", "pequeña");
 
@@ -330,9 +329,94 @@ class Perro extends Animal{
     // lazi.saludar();
     // lazi.sonar();
     // lazi.correr();
-    
-    
     // metodo etaticos , getters y setters
 
-     
+*/
 
+
+console.log(console)
+
+console.log()
+console.warn("esto es un aviso");
+
+console.error("esto es un error");
+
+console.info("esto es una informacion ");
+
+let nombre = "Andy",
+ apellido = "Yanez",
+ edad = 22
+
+
+ console.log(`hola mi nombre es  ${nombre}
+  y mi apellido ${apellido}  tengo ${edad} años de edad`);
+
+
+  console.log(`hola mi nombre es  %s y mi apellido %s tengo %d años de edad`,nombre,apellido,edad);
+
+
+  console.clear();
+
+  console.log(document);
+  console.dir(document);
+
+  console.clear();
+
+
+
+// crear grupos 
+  console.group("equipos de futbol en ecuador");
+  console.log("ldu");
+  console.log("barcelona");
+  console.log("emelec");
+  console.groupEnd();
+
+  console.clear();
+
+  console.log(console)
+
+  // cuando se quiera analizar un objeto  en tabla
+  console.table(Object.entries(console).sort()) // ol sort ordenar de manera acedente
+
+
+
+  const numeros = [1,2,3,4,5],
+  vocales =["a","b","c","d","e"]
+
+
+  const perro = {
+      nombre : "beican",
+      raza : "pitbull",
+
+  }
+
+
+
+  console.table(numeros)
+
+  console.table(perro)
+  // metodo time 
+
+
+  console.time("tiempo");
+  const arreglo = Array(100000);
+
+
+  for(let i = 0; i< arreglo.length; i++){
+      arreglo[i] = i;
+
+  }
+
+  console.timeEnd("tiempo");
+  console.log(arreglo);
+
+  console.clear();
+  // console.count(codigo for)
+
+
+  let x = 30, 
+  y = 10,
+  pruebaXY = "se esperaque x se menor a y siempre"
+
+
+  console.assert(x<y,{x,y,pruebaXY});
