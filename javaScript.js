@@ -273,6 +273,7 @@ class Perro extends Animal{
 
         super(nombre,genero);
         this.tamanio = tamanio;
+        this.raza = null;
         
         }
 
@@ -289,20 +290,49 @@ class Perro extends Animal{
         console.log("soy muy rapido")
     }
 
+    // metodo estatico
+
+    static queEres(){
+        console.log("soy un animal de cutatro patas y el amigo mas fiel del ser humano.")
     }
 
+// metodo get  obtiene el atributo de la clase , para obtener (recuperar o acceder) el valor ya asignado a un atributo y utilizarlo para cierto método.
+    get getRaza (){
+        return this.raza;
+
+    }
+      // metodo set    da acceso a una propiedad  sirve para asignar un valor inicial a un atributo, pero de forma explícita
+        
+    set setRaza (raza){
+        return this.raza = raza;
+    }
+
+
+
+    }
+
+ 
     const beican = new Animal("Beican", "macho"), 
     lazi =  new Perro("Lazy","hembra", "pequeña");
+
+
+    Perro.queEres();
+    console.log()
+    console.log()
     
-    
-    console.log(beican);
+    lazi.setRaza = "esnauser"                              
+    // console.log(beican);
     console.log(lazi)
     
-    beican.saludar();
-    beican.sonar();
+    // beican.saludar();
+    // beican.sonar();
     
-    lazi.saludar();
-    lazi.sonar();
-    lazi.correr();
+    // lazi.saludar();
+    // lazi.sonar();
+    // lazi.correr();
     
     
+    // metodo etaticos , getters y setters
+
+     
+
