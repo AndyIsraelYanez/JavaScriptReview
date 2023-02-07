@@ -420,3 +420,58 @@ let nombre = "Andy",
 
 
   console.assert(x<y,{x,y,pruebaXY});
+
+  console.clear();
+
+// objeto date  y sus variante s
+
+
+let fecha = new Date();
+
+
+
+  console.log(Date());
+
+
+  console.log(fecha);
+  // dia del mes
+
+  console.log(fecha.getDate())
+
+  // dia de la semana
+  console.log(fecha.getDay())
+
+  // mes 
+
+  console.log(fecha.getMonth())
+
+
+  console.log(fecha.getFullYear());
+
+  // 6/2/2023, 19:42:54  // completo hora y fecha 
+    console.log(fecha.toLocaleString());
+
+// 6/2/2023 solo fechas
+    console.log(fecha.toLocaleDateString());
+
+    // 19:44:38   solo hora
+    console.log(fecha.toLocaleTimeString());
+
+    // 300
+
+    
+    // la hora cero , mediriano de ggrengrish , la hora del meriado cero  utc 
+
+
+    console.log(fecha.getUTCDate());
+
+    // time stand, 1675731082870
+
+    console.log(Date.now());
+
+
+    let cumpleaños = new Date(2000,9,2000);
+    console.log(cumpleaños)
+
+
+
