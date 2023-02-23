@@ -1,37 +1,40 @@
-// objeto math opereaciones matematicas 
+// operador or  es que  puede o no estar un determiando objeto
 
-console.log(Math)
+// operador and   y que dos objetos pueden mostrase 
 
-console.log(Math.PI)
-
-// devuelve el valor absoluto abs
-
-
-console.log(Math.abs(-122))
+/*
+Cortocircuito OR-cuando el valor de la izquierda
+ en la expresión siempre pueda validar a true, es el
+valor que se cargará por defecto
 
 
-// ceil metodo para redondear al numero mayor resultado = 10
+Cortocircuito AND-cuando el valor de la izquierda
+ en la expresión siempre pueda validar a false, es el
+ valor que se cargará por defecto
+ */
 
 
-console.log(Math.ceil(9.9));
+
+function saludar(nombre) {
+
+    nombre = nombre || "desconocido";
+
+    console.log(`Nombre ${nombre}`)
+}
+
+// saludar("kevin");
+
+console.log("nombre" && "lado derecho")
+
+console.clear()
+// promp
+
+let alerta = alert("Hola esto es una alerta"),
+    confirmacion = confirm("Hola esto es una confirmación"),
+  aviso = prompt("Hola esto es un aviso y le permite al usuario ingresar un valor");
 
 
-// floor metodo para quedars e con el numero entro = resultado 9
-console.log(Math.floor(9.9))
+console.log(alerta);
 
-// round metedo que rededondea al mas cercano 
-
-console.log(Math.round(5.9))
-
-// metodo sign  indica si es numero positivo o negativo -1 , 0, 1
-
-
-console.log(Math.sign(0))
-
-
-// metodo random
-
-
-console.log(Math.round(Math.random() * 10 ));
-
-
+console.log(confirmacion);
+console.log(aviso);
